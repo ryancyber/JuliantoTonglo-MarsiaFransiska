@@ -35,15 +35,31 @@
     </noscript>
   </head>
   <body id="top">
+
+     
+    <!-- Musik autoplay tersembunyi -->
+    <audio id="bg-music" autoplay loop muted style="display:none;">
+      <source src="music/DJ SELAMAT JALAN TIPE X CEK SOUND HOREG FULL BASS PARTY MIDDLE NROTOK VIRAL TIKTOK [WN_i2lNE1e0].mp3" type="audio/mpeg">
+    </audio>
+
+   <!-- Tombol fallback akan tampil kalau autoplay diblokir -->
+  <button id="music-btn" style="
+    position:fixed; right:16px; bottom:16px; z-index:9999;
+    padding:10px 14px; border:none; border-radius:999px;
+    background:#ff6b6b; color:#fff; font-weight:600; box-shadow:0 6px 20px rgba(0,0,0,.15);
+    display:none; cursor:pointer;">
+    🔊 Nyalakan Musik
+  </button>
+
     <header></header>
-    <div class="page-content">
+    <div class="page-content" >
       <div class="div">
 <div class="ww-home-page" id="home">
   <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
     <div class="container ww-announcement-container">
       <p class="ww-couple-name ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">Julianto Tonglo (Jhelow)
  & Marsia Fransiska. S.E (Marsa)</p><img class="img-fluid mt-1" src="images/laurel-1.png" alt="Heart" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000"/>
-      <p class="h2 mt-5 ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="10">20<sup>th</sup> December, 2018</p>
+      <p class="h2 mt-5 ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="10">12<sup>th</sup> Agustus, 2025</p>
     </div>
   </div>
 </div>
@@ -55,12 +71,12 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ww-navbarNav" aria-controls="ww-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse text-uppercase" id="ww-navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link smooth-scroll"  href="#home">Home</a></li>
           <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#couple">Couple</a></li> -->
           <li class="nav-item"><a class="nav-link smooth-scroll" href="#events">Events</a></li>
-          <li class="nav-item"><a class="nav-link smooth-scroll" href="#people">People</a></li>
+          <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#people">People</a></li> -->
           <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">Gallery</a></li> -->
-          <li class="nav-item"><a class="nav-link smooth-scroll" href="#rsvp">RSVP</a></li>
+          <li class="nav-item"><a class="nav-link smooth-scroll" href="#kado-kasih">💝 Kado Kasih Sayang</a></li>
         </ul>
       </div>
     </div>
@@ -96,7 +112,7 @@
           <div class="h4">Wedding Party</div>
           <ul>
             <li><i class="text-muted fas fa-map-marker-alt"></i><span class="pl-2 text-muted">Jl. Campagaya No 30a</span></li>
-            <li class="pt-2"><i class="text-muted far fa-calendar-alt"></i><span class="pl-2 text-muted">20 Dec 2018, 9AM - 6PM</span></li>
+            <li class="pt-2"><i class="text-muted far fa-calendar-alt"></i><span class="pl-2 text-muted">12 Agustus 2025, 6PM - 10PM</span></li>
           </ul>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit nulla enim arcu dictum lobortis, ac congue non hendrerit accumsan. Ut penatibus litora platea mi mus tempus eros proin, maecenas hac eget hendrerit inceptos per tempor sodales, id varius nulla commodo augue lectus pulvinar. Etiam suscipit leo sollicitudin vivamus tempor himenaeos vitae mattis dictum posuere, tincidunt aenean litora aptent facilisis eu est gravida.</p>
         </div>
@@ -122,7 +138,7 @@
     </div>
   </div>
 </div>
-<div class="ww-section" id="people">
+<!-- <div class="ww-section" id="people">
   <div class="container ww-couple-friends">
     <h2 class="h1 text-center pt-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">Groomsmen & Bridesmaids</h2>
     <div class="carousel slide" id="ww-carouselIndicator" data-ride="carousel" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -202,7 +218,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <div class="ww-section bg-light" id="gallery">
   <div class="ww-photo-gallery">
     <!-- <div class="container">
@@ -223,10 +239,10 @@
     </div> -->
   </div>
 </div>
-<div class="ww-section ww-rsvp-detail text-white" id="rsvp">
+<div class="ww-section ww-rsvp-detail text-white" id="kado-kasih">
   <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
     <div class="col text-center">
-      <h2 class="h1 ww-title pb-3" data-aos="zoom-in-down" data-aos-duration="1000">Join Our Party</h2>
+      <h2 class="h1 ww-title pb-3" data-aos="zoom-in-down" data-aos-duration="1000">Kado Kasih Sayang</h2>
     </div>
     <div class="row ww-rsvp-form">
       <div class="col-md-10">
@@ -235,51 +251,20 @@
             <div class="row">
               <div class="col md-6 pb-3">
                 <div class="form-group">
-                  <label for="name-input">Your Name*</label>
-                  <input class="form-control" id="name-input" type="text" name="name" required="required"/>
+                  <label for="name-input">
+                    <div style="text-align: center;">
+                      <b >Bagi Bapak/Ibu/Saudara yang berkenan memberikan tanda kasih secara non-tunai, dapat mengirimkannya melalui rekening berikut:<br>
+                        JULIANTO TONGLO
+                        <br>
+                        Bank Mandiri
+                        <br>
+                        1510018030806
+                      </b>
+                  </label>
+                  
+                    </div>
+                  
                 </div>
-              </div>
-              <div class="col-md-6 pb-3">
-                <div class="form-group">
-                  <label for="email-input">Your Email*</label>
-                  <input class="form-control" id="email-input" type="email" name="_replyto" required="required"/>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col md-6 pb-3">
-                <div class="form-group">
-                  <label for="guest-input">Number of Guests</label>
-                  <select class="form-control" id="guest-input" name="guest">
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                    <option value="4">Four</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6 pb-3">
-                <div class="form-group">
-                  <label for="events-input">I am Attending</label>
-                  <select class="form-control" id="events-input" name="events">
-                    <option value="all-event">All Events</option>
-                    <option value="wedding-ceremony">Wedding ceremony</option>
-                    <option value="reception-party">Reception Party</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="form-group">
-                  <label for="message-input">Your Message</label>
-                  <textarea class="form-control" id="message-input" name="message" rows="4"></textarea>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col text-center">
-                <button class="btn btn-primary btn-submit" type="submit">Send</button>
               </div>
             </div>
           </form>
@@ -290,16 +275,83 @@
 </div>
 <div class="ww-footer bg-light">
   <div class="container text-center py-4">
-    <p class="my-0">&copy; Wonderful Wedding. All rights reserved.</p>
+    <p class="my-0">&copy; Ryan. All rights reserved.</p>
     <p class="mb-0">Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
   </div>
 </div></div>
     </div>
+  
     <footer></footer>
+    <script>
+    (function () {
+      const audio = document.getElementById('bg-music');
+      const btn   = document.getElementById('music-btn');
+
+      // Coba autoplay dalam kondisi muted (umumnya diizinkan)
+      function tryAutoplayMuted() {
+        audio.muted = true;
+        const playPromise = audio.play();
+        if (playPromise && typeof playPromise.then === 'function') {
+          playPromise.then(() => {
+            // Berhasil jalan (muted). Nanti kita unmute saat ada gesture user.
+            // Jika kamu ingin langsung unmute, tetap butuh gesture: disiapkan di bawah.
+          }).catch(() => {
+            // Bahkan muted pun diblokir: tampilkan tombol
+            showButton();
+          });
+        }
+      }
+
+      // Saat user pertama kali interaksi, unmute & play
+      function enableSound() {
+        audio.muted = false;
+        audio.play().then(() => {
+          hideButton();
+          removeGestureListeners();
+          // Ingatkan preferensi agar tidak perlu klik lagi (opsional)
+          try { localStorage.setItem('music_enabled', '1'); } catch(e){}
+        }).catch(() => {
+          // Jika masih gagal, tampilkan tombol
+          showButton();
+        });
+      }
+
+      function showButton() { btn.style.display = 'inline-block'; }
+      function hideButton() { btn.style.display = 'none'; }
+
+      function addGestureListeners() {
+        document.addEventListener('pointerdown', enableSound, { once:false });
+        document.addEventListener('keydown',     enableSound, { once:false });
+        document.addEventListener('touchstart',  enableSound, { once:false });
+      }
+      function removeGestureListeners() {
+        document.removeEventListener('pointerdown', enableSound);
+        document.removeEventListener('keydown',     enableSound);
+        document.removeEventListener('touchstart',  enableSound);
+      }
+
+      // Klik tombol fallback
+      btn.addEventListener('click', enableSound);
+
+      // Kalau user sebelumnya sudah mengizinkan, langsung unmute setelah gesture pertama
+      try {
+        if (localStorage.getItem('music_enabled') === '1') {
+          // tetap butuh satu gesture untuk unmute di sebagian browser
+          showButton(); // tampilkan tombol agar user tinggal klik sekali
+        }
+      } catch(e){}
+
+      // Jalankan
+      tryAutoplayMuted();
+      addGestureListeners();
+    })();
+  </script>
     <script src="scripts/jquery.min.js?ver=1.1.0"></script>
     <script src="scripts/bootstrap.bundle.min.js?ver=1.1.0"></script>
     <script src="scripts/aos.js?ver=1.1.0"></script>
     <script src="scripts/ekko-lightbox.min.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
+    
+    
   </body>
 </html>
